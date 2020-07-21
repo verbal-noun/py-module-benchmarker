@@ -23,7 +23,7 @@ functions = a_star_search, weighted_a_star, bidirectional_a_star # Edit this lin
     List the arguments we want to pass into each function
     We have to list the arguments inside a list and in the order we listed the functions 
 
-    args = [ [args for f1], [args for f2], [arguments for f3] ... ]
+    args = [args for f1], [args for f2], [arguments for f3] ...
 
     For example I have an array 'num' and I will pass that as an argument of each 
     sorting algorithms. 
