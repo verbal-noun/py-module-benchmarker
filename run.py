@@ -17,7 +17,7 @@ from lib.maze.diagrams import diagram3
     the names of the ones I want to compare below  
 '''
 # Example 
-functions = a_star_search, weighted_a_star, bidirectional_a_star # Edit this line 
+functions = [ a_star_search, weighted_a_star, bidirectional_a_star ]# Edit this line 
 
 '''
     List the arguments we want to pass into each function
