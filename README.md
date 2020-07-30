@@ -11,13 +11,16 @@ The program can be run in these 3 easy steps
 3. Run the benchmark 
 
 ### 1. Loading your code 
-**Step-1:** Clone the py-module-benchmarker repository into your local device. 
+**Step-1:**  Clone the py-module-benchmarker repository into your local device. 
+
 ![cloning the repository](img/1-1.png)
 
-**Step-2:** Copy the you code under the lib folder. If you just have a function you can put it into the 'module.py' file. 
+**Step-2:**  Copy the you code under the lib folder. If you just have a function you can put it into the 'module.py' file.
+
 ![Copy your code](img/1-2.png)
 
-**Step-3:** If you have put your own file copied into the lib folder, import them into the run folder. 
+**Step-3:**  If you have put your own file copied into the lib folder, import them into the run folder.
+ 
 ![Import code](img/1-3.png)
 
 The code importing is very straight forward. The structure of the file import should me:  
