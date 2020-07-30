@@ -1,6 +1,10 @@
 # The following codes for sorting algorithms are taken from GeekforGeeks
 #  (https://www.geeksforgeeks.org/)
 
+
+# SAMPLE CODE 
+# YOU CAN DELETE THIS 
+
 # Function to do insertion sort 
 def insertionSort(arr): 
   
