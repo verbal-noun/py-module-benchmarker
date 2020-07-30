@@ -46,10 +46,10 @@ def benchmarker(functions, args):
     #Printing the statistics 
     for name, numbers in times.items(): 
         print('FUNCTION:', name, 'Used', len(numbers), 'times')
-        print('\tMEDIAN', statistics.median(numbers), 'ms')
-        print('\tMEAN  ', statistics.mean(numbers), 'ms')
-        print('\tSTDEV ', statistics.stdev(numbers), 'ms')
-        print('\tMEMORY ', peak_memory[name], 'KB')
+        print('\tMEDIAN:', statistics.median(numbers), 'ms')
+        print('\tMEAN:', statistics.mean(numbers), 'ms')
+        print('\tSTDEV:', statistics.stdev(numbers), 'ms')
+        print('\tPEAK MEMORY: ', peak_memory[name], 'KB')
 
 
 
