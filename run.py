@@ -2,8 +2,9 @@
 from src.benchmarker import benchmarker
 
 # Import the functions you want to compare for the 'lib' folder 
+from lib.module import *
 from lib.a_star import *
-from lib.a_star_variants import * 
+from lib.a_star_variants import *
 
 # Import any additional dependencies required to fun the program 
 from lib.maze.diagrams import diagram3
@@ -17,7 +18,7 @@ from lib.maze.diagrams import diagram3
     the names of the ones I want to compare below  
 '''
 # Example 
-functions = [ a_star_search, weighted_a_star, bidirectional_a_star ]# Edit this line 
+functions = [ a_star_search, weighted_a_star, bidirectional_a_star ] # Edit this line 
 
 '''
     List the arguments we want to pass into each function
@@ -30,10 +31,10 @@ functions = [ a_star_search, weighted_a_star, bidirectional_a_star ]# Edit this 
 ''' 
 
 # Example 
-num = [64, 25, 12, 22, 11, 50, 19, 34, 35, 53, 55, 54]
-start, goal = (1, 4), (38, 28) 
+start, goal = (1, 4), (38, 28)
+graph = diagram3
 # NOTE - the ORDER of the functions above and arguments you put here MUST MATCH!  
-args = [diagram3, start, goal], [diagram3, start, goal], [diagram3, start, goal]
+args = [graph, start, goal], [graph, start, goal], [graph, start, goal] # Edit this line 
 
 # Passing our functions and arguments into the benchmarker 
 benchmarker(functions, args)
