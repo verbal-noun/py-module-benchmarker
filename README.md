@@ -20,12 +20,17 @@ The program can be run in these 3 easy steps
 ![Copy your code](img/1-2.png)
 
 **Step-3:**  If you have put your own file copied into the lib folder, import them into the run folder.
- 
+
 ![Import code](img/1-3.png)
 
-The code importing is very straight forward. The structure of the file import should me:  
+The code importing is very straight forward. The structure of the file import should be:  
 ```python
 from lib.[file_name] import * 
+```
+
+or if it's under a folder
+```python
+from lib.[folder].[file_name] import *
 ```
 
 ### 2. Choosing function or modules 
