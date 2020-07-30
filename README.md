@@ -10,7 +10,7 @@ The program can be run in these 3 easy steps
 2. Choose function or modules to benchmark 
 3. Run the benchmark 
 
-### 1. Loading your code 
+### Loading your code 
 **Step 1:**  Clone the py-module-benchmarker repository into your local device. 
 
 ![cloning the repository](img/1-1.png)
@@ -33,7 +33,7 @@ or if it's under a folder:
 from lib.[folder].[file_name] import *
 ```
 
-### 2. Choosing function or modules 
+### Choosing function or modules 
 
 **Step 4:** Select the functions you want to benchmark 
 
@@ -52,7 +52,7 @@ Note:
 - Each argument would be inside a list 
 
 
-### 3. Running the Benchmark 
+### Running the Benchmark 
 
 **Step 6:** To benchmark, run 'run.py' file 
 ```python
