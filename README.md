@@ -19,7 +19,7 @@ The program can be run in these 3 easy steps
 
 ![Copy your code](img/1-2.png)
 
-**Step 3:**  If you have put your own file copied into the lib folder, import them into the run folder.
+**Step 3:**  If you have put your own file copied into the lib folder, import them into the run folder. For example if I had a file named 'a_star.py' I would insert:
 
 ![Import code](img/1-3.png)
 
