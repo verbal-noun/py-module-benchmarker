@@ -3,6 +3,7 @@ from src.benchmarker import benchmarker
 
 # Import the functions you want to compare for the 'lib' folder 
 from lib.module import *
+# Please edit these accordingly 
 from lib.a_star import *
 from lib.a_star_variants import *
 
