@@ -24,7 +24,7 @@ def benchmarker(functions, args):
         argument_dict[functions[i].__name__] = args[i]
     
     # Running each function randomly around 3000 times 
-    for i in range(10):
+    for i in range(500):
         for _ in range(len(functions)):
             # Choose a function randomly from the list and load its arguments 
             func = random.choice(functions)

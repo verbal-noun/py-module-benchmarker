@@ -58,3 +58,10 @@ Note:
 ```python
 python run.py
 ```
+
+The benchmarking would run the functions around 500 times randomly. Hence it would take a few seconds to a couple of minutes depending on the complexity or number of functions. 
+
+After running you would see an output printed on Command Line like this. 
+
+![Results](img/result.png)
+
