@@ -59,9 +59,19 @@ Note:
 python run.py
 ```
 
-The benchmarking would run the functions around 500 times randomly. Hence it would take a few seconds to a couple of minutes depending on the complexity or number of functions. 
+#### Configuring iterations 
+The default program is configured to run 500 times. Hence it might take a few seconds to run the program. However, if you program is too large or you have lots of functions to compare the benchmark can slow down significantly. Hence, the option to define the number of iterations can also be specified. 
+
+You can specify the number of iterations in the terminal. 
+```python 
+python run.py 10
+```
+
+**Important:** It is highly advised that you don't go under 10 iterations to avoid any internal biases. 
+
 
 After running you would see an output printed on Command Line like this. 
 
 ![Results](img/result.png)
+
 
