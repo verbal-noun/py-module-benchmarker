@@ -1,3 +1,5 @@
+![Banner](img/banner.png)
+
 # py-module-benchmark
 This is a benchmarking utility tool to measure relative time and memory performance of python functions and programs in **3 easy steps**.
 
