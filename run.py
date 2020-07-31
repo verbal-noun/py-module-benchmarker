@@ -38,6 +38,9 @@ graph = diagram3
 # NOTE - the ORDER of the functions above and arguments you put here MUST MATCH!  
 args = [graph, start, goal], [graph, start, goal], [graph, start, goal] # Edit this line 
 
+# Determine the number of iterations 
+# Default value of 500 unless the user specifies 
+
 # Passing our functions and arguments into the benchmarker 
 benchmarker(functions, args)
 #print(sys.argv[1])

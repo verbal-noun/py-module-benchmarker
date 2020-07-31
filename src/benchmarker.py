@@ -4,6 +4,7 @@ import time
 import random
 import statistics
 import tracemalloc
+import sys
 
 '''
     The core function which handles the benchmarking of different algorithms 
@@ -11,8 +12,9 @@ import tracemalloc
     @param functions - A tuple containing the functions we want to compare 
     @param args      - A tuple containing the arguments we want to pass into each function
 '''
-def benchmarker(functions, args, iterations=500): 
-
+def benchmarker(functions, args): 
+    # Determining the number of iterations to be made 
+    iterations = 500 if len(sys.argv) < 2 else int(sys.argv[1])
     # Dictionary to hold the runtime of the comparing functions 
     times = {f.__name__: [] for f in functions}
     # Dictionary to hold memory 
@@ -44,6 +46,7 @@ def benchmarker(functions, args, iterations=500):
                 if peak > peak_memory[func.__name__] else peak_memory[func.__name__]
 
     #Printing the statistics 
+    print()
     for name, numbers in times.items(): 
         print('FUNCTION:', name, 'Run', len(numbers), 'times')
         print('\tMEDIAN:', statistics.median(numbers), 'ms')
