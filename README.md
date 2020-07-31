@@ -36,7 +36,7 @@ from lib.[folder].[file_name] import *
 
 ### Choosing function or modules 
 
-**Step 4:** Select the functions you want to benchmark 
+**Step 4:** Select the functions you want to benchmark in 'run.py' file. 
 
 ![Selecting functions to benchmark](img/2-1.png)
 
@@ -44,7 +44,7 @@ Note:
 - Just write the name of functions, without the ()
 - Write the name of the functions inside the list 
 
-**Step 5:** Define the arguments of selected functions
+**Step 5:** Define the arguments of selected functions inside 'run.py' file. 
 
 ![Defining arguments](img/2-2.png)
 
