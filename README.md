@@ -70,7 +70,7 @@ python run.py 10
 **Important:** It is highly advised that you don't go under 10 iterations to avoid any internal biases. 
 
 
-After running you would see an output printed on Command Line like this. 
+After running you would see an output printed on Command Line/Terminal like this. 
 
 ![Results](img/result.png)
 
