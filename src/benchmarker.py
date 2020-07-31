@@ -11,7 +11,7 @@ import tracemalloc
     @param functions - A tuple containing the functions we want to compare 
     @param args      - A tuple containing the arguments we want to pass into each function
 '''
-def benchmarker(functions, args): 
+def benchmarker(functions, args, iterations=500): 
 
     # Dictionary to hold the runtime of the comparing functions 
     times = {f.__name__: [] for f in functions}
@@ -24,7 +24,7 @@ def benchmarker(functions, args):
         argument_dict[functions[i].__name__] = args[i]
     
     # Running each function randomly around 3000 times 
-    for i in range(500):
+    for i in range(iterations):
         for _ in range(len(functions)):
             # Choose a function randomly from the list and load its arguments 
             func = random.choice(functions)
@@ -45,7 +45,7 @@ def benchmarker(functions, args):
 
     #Printing the statistics 
     for name, numbers in times.items(): 
-        print('FUNCTION:', name, 'Used', len(numbers), 'times')
+        print('FUNCTION:', name, 'Run', len(numbers), 'times')
         print('\tMEDIAN:', statistics.median(numbers), 'ms')
         print('\tMEAN:', statistics.mean(numbers), 'ms')
         print('\tSTDEV:', statistics.stdev(numbers), 'ms')

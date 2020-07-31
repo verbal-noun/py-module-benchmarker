@@ -1,3 +1,4 @@
+import sys
 # Importing the benchmarker 
 from src.benchmarker import benchmarker
 
@@ -39,4 +40,4 @@ args = [graph, start, goal], [graph, start, goal], [graph, start, goal] # Edit t
 
 # Passing our functions and arguments into the benchmarker 
 benchmarker(functions, args)
-
+#print(sys.argv[1])
