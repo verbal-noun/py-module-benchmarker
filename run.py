@@ -15,7 +15,7 @@ from lib.maze.diagrams import diagram3
 '''
     A list containing the name of the functions you want to compare in the format
     functions = [ f1_name, f2_name, f3_name ... ] 
-
+    
     For example I want to compare different versions of A* algorithms and I have listed
     the names of the ones I want to compare below  
 '''
