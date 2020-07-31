@@ -76,3 +76,15 @@ After running you would see an output printed on Command Line/Terminal like this
 ![Results](img/result.png)
 
 
+# Additional Notes 
+
+- The runtime of the functions is not absolute because we also running functions to track the memory. Although The runtime indication is reliable, this program is not suitable for approximate measurement of a function. 
+
+- The memory tracked here is peak memory usage during the runtime, not the total memory use.
+
+- This program may not be suitable for experiments related to Machine Learning weights or biases. If you want to track the performance of different hyper parameters, check out this website: 
+    https://www.wandb.com/
+
+    
+
+
