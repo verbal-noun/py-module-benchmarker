@@ -14,7 +14,7 @@ import sys
 '''
 def benchmarker(functions, args): 
     # Determining the number of iterations to be made 
-    iterations = 500 if len(sys.argv) < 2 else int(sys.argv[1])
+    iterations = 100 if len(sys.argv) < 2 else int(sys.argv[1])
     # Dictionary to hold the runtime of the comparing functions 
     times = {f.__name__: [] for f in functions}
     # Dictionary to hold memory 
@@ -45,15 +45,16 @@ def benchmarker(functions, args):
             peak_memory[func.__name__] = peak \
                 if peak > peak_memory[func.__name__] else peak_memory[func.__name__]
 
+
+    return times, peak_memory
+    
+
+def print_result(time_stats, memory_stats): 
     #Printing the statistics 
     print()
-    for name, numbers in times.items(): 
+    for name, numbers in time_stats.items(): 
         print('FUNCTION:', name, 'Run', len(numbers), 'times')
         print('\tMEDIAN:', statistics.median(numbers), 'ms')
         print('\tMEAN:', statistics.mean(numbers), 'ms')
         print('\tSTDEV:', statistics.stdev(numbers), 'ms')
-        print('\tPEAK MEMORY: ', peak_memory[name], 'KB')
-
-
-
-
+        print('\tPEAK MEMORY: ', memory_stats[name], 'KB')

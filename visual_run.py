@@ -1,5 +1,5 @@
 # Importing the benchmarker 
-from src.benchmarker import *
+from src.benchmarker import benchmarker
 
 # Import the functions you want to compare for the 'lib' folder 
 from lib.module import *
@@ -39,5 +39,4 @@ graph = diagram3
 args = [graph, start, goal], [graph, start, goal], [graph, start, goal] # Edit this line 
 
 # Passing our functions and arguments into the benchmarker 
-time_stats, memory_stats = benchmarker(functions, args)
-print_result(time_stats, memory_stats)
+benchmarker(functions, args)

@@ -12,7 +12,7 @@ The program can be run in these 3 easy steps
 3. Run the benchmark 
 
 ### Loading your code 
-**Step 1:**  Clone the py-module-benchmarker repository into your local device. 
+**Step 1:**  Clone the py-module-benchmark repository into your local device. 
 
 ![cloning the repository](img/1-1.png)
 
@@ -85,6 +85,6 @@ After running you would see an output printed on Command Line/Terminal like this
 - This program may not be suitable for experiments related to Machine Learning weights or biases. If you want to track the performance of different hyper parameters, check out this website: 
     https://www.wandb.com/
 
-    
+
 
 
